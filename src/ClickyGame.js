@@ -20,8 +20,8 @@ class ClickyGame extends Component {
     if (!imageClickedId.includes(id)) {
       imageClickedId.push(id)
       // if all images in json displayed
-      if (imageClickedId.length === 12) {
-        this.setState({ score: 12, totalScore: 12, imageClickedId: [] });
+      if (imageClickedId.length === 10) {
+        this.setState({ score: 10, totalScore: 10, imageClickedId: [] });
         return;
       }
       // if it's a winner
@@ -54,8 +54,8 @@ class ClickyGame extends Component {
         <div className = "row">
            
             <div className = "col-md-3">Click an image to begin!</div>
-            <div className = "col-md-6"> <h1> Score: {this.state.score} <span> | </span> Top Score: {this.state.totalScore}</h1></div>
-            <div className = "col-md-3"><p>Instructions</p><p>This is a momory game in which you have to click a unique image each time.</p></div>
+            <div className = "col-md-6 col-md-offset-3"> <h1> Score: {this.state.score} <span> | </span> Top Score: {this.state.totalScore}</h1></div>
+            
         
         </div>
           
@@ -72,7 +72,7 @@ class ClickyGame extends Component {
           ))}
         </Wrapper>
         <hr></hr>
-        <p>Click on an image to earn points, but don't click on any more than once!</p>
+        <p>Click an unique image each time to earn points.</p>
       </div>
     );
   }

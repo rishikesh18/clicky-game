@@ -1,10 +1,9 @@
 .image {
     background: #fff;
-    border-radius: 2px;
     height: 200px;
     margin: 1rem;
     position: relative;
-    width: 200px;
     overflow: hidden;
+
   }
    
