@@ -68,6 +68,7 @@ class ClickyGame extends Component {
               handleImageChange={this.handleImageChange}
               id={img.id}
               url={img.url}
+            
             />
           ))}
         </Wrapper>
